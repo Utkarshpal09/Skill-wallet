@@ -1,0 +1,1029 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Transformed_Housing_Data2' inline='true' name='federated.0ismnmh0seu9zb1f8ak4e1tehv86' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Transformed_Housing_Data2' name='textscan.0olzafc0z6bc1y1f28m141y84mg6'>
+            <connection class='textscan' directory='C:/Users/utkar/OneDrive/Desktop/project' filename='Transformed_Housing_Data2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0olzafc0z6bc1y1f28m141y84mg6' name='Transformed_Housing_Data2.csv' table='[Transformed_Housing_Data2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='real' name='Sale_Price' ordinal='0' />
+            <column datatype='integer' name='No of Bedrooms' ordinal='1' />
+            <column datatype='real' name='No of Bathrooms' ordinal='2' />
+            <column datatype='real' name='Flat Area (in Sqft)' ordinal='3' />
+            <column datatype='real' name='Lot Area (in Sqft)' ordinal='4' />
+            <column datatype='real' name='No of Floors' ordinal='5' />
+            <column datatype='integer' name='No of Times Visited' ordinal='6' />
+            <column datatype='integer' name='Overall Grade' ordinal='7' />
+            <column datatype='real' name='Area of the House from Basement (in Sqft)' ordinal='8' />
+            <column datatype='integer' name='Basement Area (in Sqft)' ordinal='9' />
+            <column datatype='integer' name='Age of House (in Years)' ordinal='10' />
+            <column datatype='real' name='Latitude' ordinal='11' />
+            <column datatype='real' name='Longitude' ordinal='12' />
+            <column datatype='real' name='Living Area after Renovation (in Sqft)' ordinal='13' />
+            <column datatype='integer' name='Lot Area after Renovation (in Sqft)' ordinal='14' />
+            <column datatype='integer' name='Years Since Renovation' ordinal='15' />
+            <column datatype='integer' name='Condition_of_the_House_Excellent' ordinal='16' />
+            <column datatype='integer' name='Condition_of_the_House_Fair' ordinal='17' />
+            <column datatype='integer' name='Condition_of_the_House_Good' ordinal='18' />
+            <column datatype='integer' name='Condition_of_the_House_Okay' ordinal='19' />
+            <column datatype='integer' name='Ever_Renovated_Yes' ordinal='20' />
+            <column datatype='integer' name='Waterfront_View_Yes' ordinal='21' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_1' ordinal='22' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_2' ordinal='23' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_3' ordinal='24' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_4' ordinal='25' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_5' ordinal='26' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_6' ordinal='27' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_7' ordinal='28' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_8' ordinal='29' />
+            <column datatype='integer' name='Zipcode_Group_Zipcode_Group_9' ordinal='30' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sale_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sale_Price]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Sale_Price</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No of Bedrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No of Bedrooms]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>No of Bedrooms</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No of Bathrooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No of Bathrooms]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>No of Bathrooms</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flat Area (in Sqft)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Flat Area (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Flat Area (in Sqft)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lot Area (in Sqft)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lot Area (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Lot Area (in Sqft)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No of Floors</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[No of Floors]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>No of Floors</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No of Times Visited</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No of Times Visited]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>No of Times Visited</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overall Grade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Overall Grade]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Overall Grade</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area of the House from Basement (in Sqft)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Area of the House from Basement (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Area of the House from Basement (in Sqft)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Basement Area (in Sqft)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Basement Area (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Basement Area (in Sqft)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age of House (in Years)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age of House (in Years)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Age of House (in Years)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Living Area after Renovation (in Sqft)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Living Area after Renovation (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Living Area after Renovation (in Sqft)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lot Area after Renovation (in Sqft)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Lot Area after Renovation (in Sqft)]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Lot Area after Renovation (in Sqft)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years Since Renovation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Years Since Renovation]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Years Since Renovation</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition_of_the_House_Excellent</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Condition_of_the_House_Excellent]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Condition_of_the_House_Excellent</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition_of_the_House_Fair</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Condition_of_the_House_Fair]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Condition_of_the_House_Fair</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition_of_the_House_Good</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Condition_of_the_House_Good]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Condition_of_the_House_Good</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Condition_of_the_House_Okay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Condition_of_the_House_Okay]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Condition_of_the_House_Okay</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ever_Renovated_Yes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ever_Renovated_Yes]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Ever_Renovated_Yes</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Waterfront_View_Yes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Waterfront_View_Yes]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Waterfront_View_Yes</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_1]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_1</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_2]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_2</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_3]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_3</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_4]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_4</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_5]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_5</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_6]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_6</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_7]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_7</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_8]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_8</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode_Group_Zipcode_Group_9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode_Group_Zipcode_Group_9]</local-name>
+            <parent-name>[Transformed_Housing_Data2.csv]</parent-name>
+            <remote-alias>Zipcode_Group_Zipcode_Group_9</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' hidden='true' name='[Area of the House from Basement (in Sqft)]' role='measure' type='quantitative' />
+      <column caption='Condition of the House Excellent' datatype='integer' hidden='true' name='[Condition_of_the_House_Excellent]' role='measure' type='quantitative' />
+      <column caption='Condition of the House Fair' datatype='integer' hidden='true' name='[Condition_of_the_House_Fair]' role='measure' type='quantitative' />
+      <column caption='Condition of the House Good' datatype='integer' hidden='true' name='[Condition_of_the_House_Good]' role='measure' type='quantitative' />
+      <column caption='Condition of the House Okay' datatype='integer' hidden='true' name='[Condition_of_the_House_Okay]' role='measure' type='quantitative' />
+      <column caption='Ever Renovated Yes' datatype='integer' hidden='true' name='[Ever_Renovated_Yes]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[No of Times Visited]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[Overall Grade]' role='measure' type='quantitative' />
+      <column caption='Sale Price (bin)' datatype='integer' name='[Sale Price (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='4' formula='[Sale_Price]' peg='0' size='26989' />
+      </column>
+      <column caption='Sale Price' datatype='real' name='[Sale_Price]' role='measure' type='quantitative' />
+      <column caption='Waterfront View Yes' datatype='integer' hidden='true' name='[Waterfront_View_Yes]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Zipcode Group Zipcode Group 1' datatype='integer' default-format='*00000' hidden='true' name='[Zipcode_Group_Zipcode_Group_1]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode Group Zipcode Group 2' datatype='integer' default-format='*00000' hidden='true' name='[Zipcode_Group_Zipcode_Group_2]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode Group Zipcode Group 3' datatype='integer' default-format='*00000' hidden='true' name='[Zipcode_Group_Zipcode_Group_3]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode Group Zipcode Group 4' datatype='integer' default-format='*00000' hidden='true' name='[Zipcode_Group_Zipcode_Group_4]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode Group Zipcode Group 5' datatype='integer' default-format='*00000' hidden='true' name='[Zipcode_Group_Zipcode_Group_5]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode Group Zipcode Group 6' datatype='integer' default-format='*00000' hidden='true' name='[Zipcode_Group_Zipcode_Group_6]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode Group Zipcode Group 7' datatype='integer' default-format='*00000' hidden='true' name='[Zipcode_Group_Zipcode_Group_7]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode Group Zipcode Group 8' datatype='integer' default-format='*00000' hidden='true' name='[Zipcode_Group_Zipcode_Group_8]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' caption='Zipcode Group Zipcode Group 9' datatype='integer' default-format='*00000' hidden='true' name='[Zipcode_Group_Zipcode_Group_9]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Transformed_Housing_Data2.csv' datatype='table' name='[__tableau_internal_object_id__].[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/utkar/AppData/Local/Temp/TableauTemp/#TableauTemp_1yg7ird12g41dq10ytlhr0y04zfx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/08/2026 05:16:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Sale_Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sale_Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sale_Price</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1974</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No of Bedrooms</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No of Bedrooms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No of Bedrooms</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No of Bathrooms</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[No of Bathrooms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No of Bathrooms</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Flat Area (in Sqft)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Flat Area (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flat Area (in Sqft)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>794</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lot Area (in Sqft)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Lot Area (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lot Area (in Sqft)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5057</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No of Floors</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[No of Floors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No of Floors</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Basement Area (in Sqft)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Basement Area (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Basement Area (in Sqft)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>330</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age of House (in Years)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age of House (in Years)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age of House (in Years)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>133</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4523</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>967</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Living Area after Renovation (in Sqft)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Living Area after Renovation (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Living Area after Renovation (in Sqft)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>580</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lot Area after Renovation (in Sqft)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Lot Area after Renovation (in Sqft)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lot Area after Renovation (in Sqft)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4465</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years Since Renovation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Years Since Renovation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years Since Renovation</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Transformed_Housing_Data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Transformed_Housing_Data2.csv' id='Transformed_Housing_Data2.csv_533A64DE81034B288C9EB7970F013219'>
+            <properties context=''>
+              <relation connection='textscan.0olzafc0z6bc1y1f28m141y84mg6' name='Transformed_Housing_Data2.csv' table='[Transformed_Housing_Data2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='real' name='Sale_Price' ordinal='0' />
+                  <column datatype='integer' name='No of Bedrooms' ordinal='1' />
+                  <column datatype='real' name='No of Bathrooms' ordinal='2' />
+                  <column datatype='real' name='Flat Area (in Sqft)' ordinal='3' />
+                  <column datatype='real' name='Lot Area (in Sqft)' ordinal='4' />
+                  <column datatype='real' name='No of Floors' ordinal='5' />
+                  <column datatype='integer' name='No of Times Visited' ordinal='6' />
+                  <column datatype='integer' name='Overall Grade' ordinal='7' />
+                  <column datatype='real' name='Area of the House from Basement (in Sqft)' ordinal='8' />
+                  <column datatype='integer' name='Basement Area (in Sqft)' ordinal='9' />
+                  <column datatype='integer' name='Age of House (in Years)' ordinal='10' />
+                  <column datatype='real' name='Latitude' ordinal='11' />
+                  <column datatype='real' name='Longitude' ordinal='12' />
+                  <column datatype='real' name='Living Area after Renovation (in Sqft)' ordinal='13' />
+                  <column datatype='integer' name='Lot Area after Renovation (in Sqft)' ordinal='14' />
+                  <column datatype='integer' name='Years Since Renovation' ordinal='15' />
+                  <column datatype='integer' name='Condition_of_the_House_Excellent' ordinal='16' />
+                  <column datatype='integer' name='Condition_of_the_House_Fair' ordinal='17' />
+                  <column datatype='integer' name='Condition_of_the_House_Good' ordinal='18' />
+                  <column datatype='integer' name='Condition_of_the_House_Okay' ordinal='19' />
+                  <column datatype='integer' name='Ever_Renovated_Yes' ordinal='20' />
+                  <column datatype='integer' name='Waterfront_View_Yes' ordinal='21' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_1' ordinal='22' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_2' ordinal='23' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_3' ordinal='24' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_4' ordinal='25' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_5' ordinal='26' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_6' ordinal='27' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_7' ordinal='28' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_8' ordinal='29' />
+                  <column datatype='integer' name='Zipcode_Group_Zipcode_Group_9' ordinal='30' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Transformed_Housing_Data2' name='federated.0ismnmh0seu9zb1f8ak4e1tehv86' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ismnmh0seu9zb1f8ak4e1tehv86'>
+            <column caption='Sale Price (bin)' datatype='integer' name='[Sale Price (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='4' formula='[Sale_Price]' peg='0' size='26989' />
+            </column>
+            <column caption='Sale Price' datatype='real' name='[Sale_Price]' role='measure' type='quantitative' />
+            <column-instance column='[Sale Price (bin)]' derivation='None' name='[none:Sale Price (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Sale_Price]' derivation='Sum' name='[sum:Sale_Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0ismnmh0seu9zb1f8ak4e1tehv86].[sum:Sale_Price:qk]</rows>
+        <cols>[federated.0ismnmh0seu9zb1f8ak4e1tehv86].[none:Sale Price (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0ismnmh0seu9zb1f8ak4e1tehv86].[Sale Price (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A417DBEA-FB0F-485F-905D-8697FD46A493}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Housing market trends dashboard '>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98140' id='3' name='Sheet 1' w='97538' x='1231' y='930'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='5' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930'>
+                <zone fixed-size='280' h='98140' id='3' is-fixed='true' name='Sheet 1' w='97538' x='1231' y='930'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F950FA47-CB03-4164-84DB-2DEDF94A538C}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ismnmh0seu9zb1f8ak4e1tehv86].[none:Sale Price (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{932F3CCC-2467-44A0-9885-221B3589E613}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Housing market trends dashboard '>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D28209D7-6BE3-40A4-8428-E687545797DE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Housing market trends dashboard ' width='192'>
+      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
+      gOOtAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      jgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
